@@ -25,7 +25,7 @@ plugins:
   - search
   - awesome-pages
 nav:
-  - Home: index.md
+  - Home: cybersecurity-engineering-course/docs/index.md
   - Foundations:
       - Intro: /cybersecurity-engineering-course/section-01-foundations/README.md
       - Lab 1: /cybersecurity-engineering-course/section-01-foundations/lab/lab1-basic-linux.md
