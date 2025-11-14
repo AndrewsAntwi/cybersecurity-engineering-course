@@ -27,8 +27,8 @@ plugins:
 nav:
   - Home: index.md
   - Foundations:
-      - Intro: foundations/index.md
-      - Lab 1: foundations/labs/lab1.md
+      - Intro: section-01-foundations/README.md
+      - Lab 1: section-01-foundations/lab/lab1-basic-linux.md
   - Security Environment:
       - Lab 2: sec-env/labs/lab2.md
   - Web Security:
