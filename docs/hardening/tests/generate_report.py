@@ -1,0 +1,1 @@
+print('Generate HTML report')
