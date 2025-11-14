@@ -29,4 +29,4 @@ Steps:
 
 ### Hands-On Lab 1
 
-[Lab 1: basic Linux Skills](lab1.md)
+[Lab 1: basic Linux Skills](/lab/lab1-basic-linux.md)
