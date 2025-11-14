@@ -1312,56 +1312,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Lessons">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-docker-fundamentals" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Docker Fundamentals
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-what-makes-dvwa-vulnerable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. What Makes DVWA Vulnerable
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-kali-linux-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Kali Linux Overview
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-ethical-hacking-rules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Ethical Hacking Rules
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -1383,23 +1333,48 @@
 
 <h1 id="module-2-build-your-first-security-environment">Module 2 — Build Your First Security Environment</h1>
 <h2 id="lessons">Lessons</h2>
-<h3 id="1-docker-fundamentals">1. Docker Fundamentals</h3>
-<ul>
-<li>Images, containers, ports, volumes</li>
-<li>Why security engineers use Docker</li>
-</ul>
-<h3 id="2-what-makes-dvwa-vulnerable">2. What Makes DVWA Vulnerable</h3>
-<ul>
-<li>SQLi, XSS, CSRF, File Upload, Command Injection</li>
-</ul>
-<h3 id="3-kali-linux-overview">3. Kali Linux Overview</h3>
-<ul>
-<li>nmap, gobuster, hydra, sqlmap, burpsuite</li>
-</ul>
-<h3 id="4-ethical-hacking-rules">4. Ethical Hacking Rules</h3>
-<ul>
-<li>Only hack systems you own or are authorized to test</li>
-</ul>
+<p>In this module, learners will build a full offensive–defensive lab using Docker, DVWA, and Kali Linux containers.
+This is the same setup used by security engineers and penetration testers to safely practice hacking skills.</p>
+<p>📘 LESSONS</p>
+<h1 id="1-docker-fundamentals">1. Docker Fundamentals</h1>
+<p>Docker lets you run applications inside containers, which are lightweight, isolated mini‑systems.</p>
+<p>🔍 Key Concepts</p>
+<p>Images → blueprints (e.g., “Kali Linux image”)</p>
+<p>Containers → running instances of images</p>
+<p>Ports → how your computer talks to containers</p>
+<p>Volumes → saved data</p>
+<p>🧠 Simple Diagram
+Your Computer
+   │
+   ├── Docker Engine
+   │      ├── DVWA Container (port 8080 → 80)
+   │      └── Kali Linux Container (interactive shell)</p>
+<h1 id="2-what-makes-dvwa-vulnerable">2. What Makes DVWA Vulnerable?</h1>
+<p>DVWA = Damn Vulnerable Web App.
+It intentionally includes broken code such as:</p>
+<p>SQL Injection</p>
+<p>XSS</p>
+<p>File Upload Exploits</p>
+<p>CSRF</p>
+<p>Command Injection</p>
+<p>DVWA is designed for learning and practicing security skills safely.</p>
+<h1 id="3-kali-linux-overview">3. Kali Linux Overview</h1>
+<p>Kali Linux is a security-focused Linux distribution.</p>
+<p>It includes:</p>
+<p>nmap (network scanner)</p>
+<p>sqlmap (SQLi exploitation)</p>
+<p>gobuster (dir brute-forcing)</p>
+<p>burpsuite (web proxy)</p>
+<p>hydra (password brute‑forcing)</p>
+<p>We'll run Kali inside a container for fast setup and safe experimentation.</p>
+<ol>
+<li>Ethical Hacking Rules</li>
+</ol>
+<p>Before hacking anything:</p>
+<p>✔ You must have permission
+✔ Only attack systems you own or are authorized to test
+✔ Do not attempt real-world targets
+✔ Learn responsibly</p>
 <hr />
 <h1 id="labs">Labs</h1>
 <h2 id="lab-1-install-docker">Lab 1 — Install Docker</h2>
