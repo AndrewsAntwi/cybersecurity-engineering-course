@@ -45,6 +45,15 @@ This module covers the core principles and foundational knowledge required to un
 - **HTTP / HTTPS** – Web communication protocols  
 - **Ports & Protocols** – TCP/UDP channels (e.g., 80, 443)
 
+| Protocol | Port | Purpose                   |
+| -------- | ---- | ------------------------- |
+| HTTP     | 80   | Web traffic (unencrypted) |
+| HTTPS    | 443  | Secure web traffic        |
+| DNS      | 53   | Domain → IP resolution    |
+| SSH      | 22   | Secure remote access      |
+| FTP      | 21   | File transfer             |
+| SMTP     | 25   | Email sending             |
+
 ---
 
 ## 3️⃣ Fundamentals of Information Security
@@ -71,6 +80,26 @@ This module covers the core principles and foundational knowledge required to un
 | **Preventive** | Firewalls, antivirus, MFA |
 | **Detective** | IDS/IPS, log monitoring, SIEM |
 | **Corrective** | Patching, backups, incident response |
+
+---
+Understanding Logs
+
+Logs are records of system and network activity.
+
+Common log types:
+
+Auth logs → login attempts, sudo usage
+
+System logs → kernel events
+
+Web logs → HTTP requests
+
+Application logs → app-specific events
+
+Why logs matter:
+✔ Helps analysts investigate incidents
+✔ Supports threat detection
+✔ Required for compliance (PCI-DSS, HIPAA, etc.)
 
 ---
 
