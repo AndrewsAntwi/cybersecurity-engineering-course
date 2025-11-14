@@ -1,1 +1,0 @@
-# Lab 4 – Linux Hardening
