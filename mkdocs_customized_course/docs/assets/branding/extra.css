@@ -1,0 +1,24 @@
+/* Custom Material Theme Overrides */
+
+/* Header background color */
+.md-header {
+    background-color: #1E3A8A !important; /* Indigo 800 */
+}
+
+/* Primary links color */
+.md-nav__link--active {
+    color: #8B5CF6 !important; /* Deep Purple accent */
+}
+
+/* Code block styling */
+.md-typeset pre {
+    background-color: #F3F4F6 !important; /* Gray-100 */
+    border-radius: 0.5rem !important;
+    padding: 1rem !important;
+}
+
+/* Footer styling */
+.md-footer {
+    background-color: #1E3A8A !important;
+    color: white !important;
+}
