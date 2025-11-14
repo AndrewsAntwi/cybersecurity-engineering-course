@@ -1,0 +1,17 @@
+name: Trivy Scanner
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Trivy
+        uses: aquasecurity/trivy-action@master
+
+      - name: Scan file system
+        run: trivy fs .
