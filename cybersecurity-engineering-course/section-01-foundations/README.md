@@ -29,4 +29,4 @@ Steps:
 
 ### Hands-On Lab 1
 
-[Lab 1: basic Linux Skills](/lab/lab1-basic-linux.md)
+[Lab 1: basic Linux Skills](/cybersecurity-engineering-course/section-01-foundations/lab/lab1-basic-linux.md)
