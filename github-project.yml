@@ -1,0 +1,45 @@
+name: Cybersecurity Engineering Course Roadmap
+description: Complete development roadmap for the 10-module cybersecurity engineering course.
+public: true
+
+views:
+  - name: Board
+    type: board
+    filter: is:open
+    layout: {
+      columns: [
+        { name: Backlog },
+        { name: In Progress },
+        { name: Review },
+        { name: Complete }
+      ]
+    }
+
+items:
+  - title: Build LMS static site
+    body: Develop responsive HTML/CSS/Tailwind LMS.
+    status: Backlog
+
+  - title: Complete Section 1 content & labs
+    body: Foundations, Linux basics, diagrams.
+    status: Complete
+
+  - title: Add cybersecurity labs to Section 2
+    body: Dockerized DVWA, Kali tools, lab instructions.
+    status: Complete
+
+  - title: Deploy Trivy CI workflow
+    body: Add GitHub Actions for DevSecOps scanning.
+    status: In Progress
+
+  - title: Expand SIEM coverage in Section 7
+    body: Add custom dashboards, log pipelines.
+    status: Backlog
+
+  - title: Write detection engineering rules
+    body: Add Sigma-format rules + Wazuh JSON.
+    status: Review
+
+  - title: Finalize capstone project
+    body: Improve templates, sample report, scoring rubric.
+    status: In Progress
