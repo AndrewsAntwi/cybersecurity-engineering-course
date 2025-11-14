@@ -1,4 +1,4 @@
-# Module 1 — Foundations of Computing for Cybersecurity
+# Module 1 — Foundations of Cybersecurity
 
 ## Objectives
 - Understand servers, clients, DNS, HTTP/HTTPS, IPs
@@ -26,3 +26,7 @@ Steps:
 ## Deliverables
 - Screenshots of VM, command outputs, installed tools, logs view
 - Short reflection (3-5 sentences)
+
+### Hands-On Lab 1
+
+[Lab 1: basic Linux Skills](lab1.md)
