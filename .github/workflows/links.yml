@@ -1,0 +1,17 @@
+name: Link Checker
+
+on:
+  push:
+  schedule:
+    - cron: "0 12 * * 0"   # Weekly scan
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --recursive .
