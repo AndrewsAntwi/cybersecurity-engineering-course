@@ -10,6 +10,8 @@
       
       
       
+        <link rel="next" href="web-sec/labs/lab3/">
+      
       
         
       
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#security-engineering" class="md-skip">
+        <a href="#security-engineering-course" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Security Engineering
+              Home
             
           </span>
         </div>
@@ -194,9 +196,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="README.md" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
         
   
   
@@ -425,10 +429,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="README.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
         
   
   
@@ -444,6 +475,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#labs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧪 Labs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capstone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏁 Capstone
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📜 License
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1409,6 +1504,58 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#labs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧪 Labs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capstone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏁 Capstone
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📜 License
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1424,10 +1571,50 @@
 
 
 
-<h1 id="security-engineering">Security Engineering</h1>
-<p>Welcome to the <strong>From Zero to Security Engineer</strong> course documentation.</p>
-<p>Use the navigation on the left to explore the syllabus, modules, labs, and capstone.</p>
-<p>This MkDocs site is generated from the course repository and is suitable to publish via GitHub Pages.</p>
+<h1 id="security-engineering-course">🛡️ Security Engineering Course</h1>
+<p><img alt="Trivy Scan" src="https://github.com/AndrewsAntwi/cybersecurity-engineering-course/actions/workflows/trivy-scan.yml/badge.svg" />
+<img alt="Markdown Lint" src="https://github.com/AndrewsAntwi/cybersecurity-engineering-course/actions/workflows/markdown-lint.yml/badge.svg" />
+<img alt="Link Checker" src="https://github.com/AndrewsAntwi/cybersecurity-engineering-course/actions/workflows/links.yml/badge.svg" /></p>
+<p>Welcome to the <strong>From Zero to Security Engineer</strong>
+A complete 10-module cybersecurity engineering curriculum with hands-on labs, projects, and a final capstone.</p>
+<p>This GitHub repository contains:</p>
+<ul>
+<li>All labs</li>
+<li>All assignments</li>
+<li>All code samples</li>
+<li>Docker setups</li>
+<li>SIEM rules</li>
+<li>DevSecOps pipelines</li>
+<li>Capstone templates</li>
+</ul>
+<h2 id="structure">🧩 Structure</h2>
+<ul>
+<li><code>section-01-foundations/</code>  </li>
+<li><code>section-02-security-labs/</code>  </li>
+<li><code>section-03-web-attacks/</code>  </li>
+<li><code>section-04-secure-coding/</code>  </li>
+<li><code>section-05-linux-hardening/</code>  </li>
+<li><code>section-06-cloud-security/</code>  </li>
+<li><code>section-07-siem/</code>  </li>
+<li><code>section-08-detection-engineering/</code>  </li>
+<li><code>section-09-devsecops/</code>  </li>
+<li><code>section-10-capstone/</code></li>
+</ul>
+<h2 id="labs">🧪 Labs</h2>
+<p>You will find all lab instructions in each section's <code>/lab</code> folder.</p>
+<h2 id="capstone">🏁 Capstone</h2>
+<p>Your final project ties together:</p>
+<ul>
+<li>Cloud security</li>
+<li>Linux hardening</li>
+<li>SIEM monitoring</li>
+<li>Web exploitation</li>
+<li>Secure coding</li>
+<li>Detection engineering</li>
+<li>DevSecOps scanning</li>
+</ul>
+<h2 id="license">📜 License</h2>
+<p>Free to use for training and skill development.</p>
 
 
 
