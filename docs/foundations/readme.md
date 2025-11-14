@@ -90,4 +90,4 @@ This module covers the core principles and foundational knowledge required to un
 
 Complete the hands-on lab to practice **basic Linux commands, permissions, and log monitoring**.
 
-[Go to Lab 1 →](lab1.md)
+[Go to Lab 1 →](labs/lab1.md)
