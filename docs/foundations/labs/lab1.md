@@ -91,3 +91,4 @@ grep "Failed password" /var/log/auth.log
 # Disable a suspicious user account:
 sudo usermod -L baduser
 ```
+<button id="markCompleteBtn" data-module="foundations" class="cta-btn">Mark Module Complete</button>

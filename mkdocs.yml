@@ -1,9 +1,13 @@
 
 site_name: Security Engineering
+site_description: Hands-on cybersecurity engineering learning platform
+site_url: https://andrewsantwi.github.io/cybersecurity-engineering-course
+
 theme:
   name: material
   logo: assets/logo.png
   favicon: assets/favicon.ico
+  
   palette:
     - scheme: default
       primary: indigo
@@ -11,30 +15,75 @@ theme:
     - scheme: slate
       primary: indigo
       accent: deep purple
+  
   features:
     - navigation.expand
     - navigation.sections
     - navigation.tabs
+    - navigation.instant
+    - navigation.path
     - content.code.copy
+    - content.action.edit
     - content.tabs.link
     - search.highlight
     - search.suggest
+    - toc.integrate
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+
   extra_css:
     - assets/branding/extra.css
+
+extra:
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  
+  extra_javascript:
+  - assets/js/progress.js
+  - https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js
+  - https://cdn.jsdelivr.net/npm/jsrsasign
+
+  - assets/js/certificate.js
+
+
 plugins:
   - search
   - awesome-pages
+  - meta-descriptions
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - attr_list
+  - md_in_html
+
 nav:
   - Home: README.md
-  - Foundations:
-      - Intro: docs/foundations/readme.md
-      - Lab 1: docs/foundations/labs/lab1.md
+  - Dashboard: dashboard.md
+  - Certificate Verify: cert-verify.md
+  - Certificate Issue: cert-issue.md
+
+  - 📘 Foundations of Cybersecurity::
+      - Overview: foundations/readme.md
+      - Lab 1: foundations/labs/lab1.md
+
   - Build Your Home Lab:
-      - Intro: docs/sec-env/readme.md
-      - Lab 1: docs/sec-env/labs/lab1.md
-      - Lab 2: docs/sec-env/labs/lab2.md
-      - Lab 3: docs/sec-env/labs/lab3.md
-      - Lab 4: docs/sec-env/labs/lab4.md
+      - Intro: sec-env/readme.md
+      - Lab 1: sec-env/labs/lab1.md
+      - Lab 2: sec-env/labs/lab2.md
+      - Lab 3: sec-env/labs/lab3.md
+      - Lab 4: sec-env/labs/lab4.md
   - Web Security:
       - Lab 3: web-sec/labs/lab3.md
   - Linux Hardening:
@@ -48,4 +97,4 @@ nav:
   - DevSecOps:
       - Lab 7: devsecops/labs/lab7.md
   - Capstone: 
-      - capstone: docs/capstone/readme.md
+      - capstone: capstone/readme.md

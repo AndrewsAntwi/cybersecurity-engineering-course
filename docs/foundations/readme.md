@@ -82,11 +82,13 @@ This module covers the core principles and foundational knowledge required to un
 | **Corrective** | Patching, backups, incident response |
 
 ---
-Understanding Logs
+
+### Understanding Logs
 
 Logs are records of system and network activity.
 
-Common log types:
+
+### Common log types:
 
 Auth logs → login attempts, sudo usage
 
@@ -96,7 +98,16 @@ Web logs → HTTP requests
 
 Application logs → app-specific events
 
-Why logs matter:
+### Examples of log types:
+
+| Log Type | Example |
+|----------|----------|
+| System Logs | `/var/log/syslog` |
+| Auth Logs | `/var/log/auth.log` |
+| Web Logs | `/var/log/nginx/access.log` |
+| Cloud Logs | CloudTrail / Log Analytics
+
+### Why logs matter:
 ✔ Helps analysts investigate incidents
 ✔ Supports threat detection
 ✔ Required for compliance (PCI-DSS, HIPAA, etc.)
@@ -114,6 +125,7 @@ Why logs matter:
 > Based on the NIST Cybersecurity Framework
 
 ---
+<button id="markCompleteBtn" data-module="foundations" class="cta-btn">Mark Module Complete</button>
 
 ## 5️⃣ Next Step
 
