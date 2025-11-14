@@ -3,6 +3,7 @@ site_name: Cybersecurity Engineering Course
 theme:
   name: material
   logo: assets/logo.png
+  favicon: assets/favicon.ico
   palette:
     - scheme: default
       primary: indigo
@@ -18,6 +19,8 @@ theme:
     - content.tabs.link
     - search.highlight
     - search.suggest
+  extra_css:
+    - assets/branding/extra.css
 plugins:
   - search
   - awesome-pages
