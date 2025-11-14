@@ -10,8 +10,6 @@
       
       
       
-        <link rel="next" href="../../../web-sec/labs/lab3/">
-      
       
         
       
@@ -21,7 +19,7 @@
     
     
       
-        <title>Lab 2 - Security Engineering</title>
+        <title>Lab 2 – Building Security Environment: Docker Fundamentals - Security Engineering</title>
       
     
     
@@ -72,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lab-2-building-security-environment" class="md-skip">
+        <a href="#lab-2-building-security-environment-docker-fundamentals" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab 2
+              Lab 2 – Building Security Environment: Docker Fundamentals
             
           </span>
         </div>
@@ -235,13 +233,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../lab2.md" class="md-tabs__link">
           
   
   
@@ -573,31 +569,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -615,7 +608,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -630,19 +623,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../lab2.md" class="md-nav__link">
         
   
   
@@ -658,7 +642,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1329,7 +1312,94 @@
 
 
 
-<h1 id="lab-2-building-security-environment">Lab 2 – Building Security Environment</h1>
+<h1 id="lab-2-building-security-environment-docker-fundamentals">Lab 2 – Building Security Environment: Docker Fundamentals</h1>
+<p>Docker lets you run applications inside containers, which are lightweight, isolated mini‑systems.</p>
+<p>🔍 Key Concepts</p>
+<p>Images → blueprints (e.g., “Kali Linux image”)</p>
+<p>Containers → running instances of images</p>
+<p>Ports → how your computer talks to containers</p>
+<p>Volumes → saved data</p>
+<p>🔍 Visualization
++-------------------------------------------------------+
+|                Your Computer (Host)                   |
+|  +-----------------+   +---------------------------+  |
+|  | DVWA Container  |   | Kali Linux Container     |  |
+|  | Port: 8080 → 80 |   | Interactive Shell &amp; Tools|  |
+|  +-----------------+   +---------------------------+  |
+|                 Docker Engine                         |
++-------------------------------------------------------+</p>
+<h1 id="lab-1-install-configure-docker">🟩 LAB 1 — Install &amp; Configure Docker</h1>
+<h2 id="learning-goal">🎯 Learning Goal</h2>
+<p>Install Docker and verify it is working.</p>
+<h3 id="section-a-install-docker-macwindows">SECTION A — Install Docker (Mac/Windows)</h3>
+<ol>
+<li>Download Docker Desktop</li>
+</ol>
+<p>Go to:
+https://www.docker.com/products/docker-desktop/</p>
+<ol>
+<li>Install normally</li>
+</ol>
+<p>Follow on-screen instructions.</p>
+<ol>
+<li>Verify install</li>
+</ol>
+<pre><code class="language-bash">docker --version
+docker ps
+</code></pre>
+<p>Expected Output</p>
+<pre><code>Docker version 27.x.x, build xxxx
+CONTAINER ID   IMAGE   COMMAND   STATUS   PORTS   NAMES
+</code></pre>
+<h3 id="section-b-install-docker-ubuntulinux">SECTION B — Install Docker (Ubuntu/Linux)</h3>
+<ol>
+<li>Update system</li>
+</ol>
+<pre><code class="language-bash">sudo apt update &amp;&amp; sudo apt upgrade -y
+</code></pre>
+<ol>
+<li>Install Docker Engine</li>
+</ol>
+<pre><code class="language-bash">sudo apt install docker.io -y
+</code></pre>
+<ol>
+<li>Enable Docker on startup</li>
+</ol>
+<pre><code class="language-bash">sudo systemctl start docker
+sudo systemctl enable docker
+</code></pre>
+<ol>
+<li>Verify service status</li>
+</ol>
+<pre><code class="language-bash">systemctl status docker
+</code></pre>
+<p>Look for: active (running).</p>
+<h3 id="section-c-post-installation-fix-linux">SECTION C — Post-Installation Fix (Linux)</h3>
+<p>Fix “permission denied” when running Docker:</p>
+<pre><code class="language-bash">sudo usermod -aG docker $USER
+newgrp docker
+</code></pre>
+<h3 id="section-d-troubleshooting">SECTION D — Troubleshooting</h3>
+<p>❌ Docker Desktop won’t start</p>
+<p>→ Restart the computer.
+→ Ensure virtualization is enabled (BIOS/UEFI).</p>
+<p>❌ permission denied</p>
+<p>→ Add user to docker group (above).</p>
+<p>❌ Containers won’t start</p>
+<p>Check logs:</p>
+<pre><code class="language-bash">docker logs &lt;container-id&gt;
+</code></pre>
+<h1 id="basic-install">Basic Install</h1>
+<pre><code class="language-bash">sudo apt update &amp;&amp; sudo apt upgrade -y
+sudo apt install docker.io -y
+sudo systemctl enable docker
+sudo systemctl start docker
+
+# Verify installation
+docker --version
+docker ps
+
+</code></pre>
 
 
 
