@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+{{ super() }}
+
+<!-- ========================= -->
+<!-- 📊 Google Analytics (GA4) -->
+<!-- ========================= -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<!-- ========================= -->
+<!-- 🔍 SEO META TAGS          -->
+<!-- ========================= -->
+<meta name="description" content="A complete cybersecurity engineering course covering foundations, labs, DevSecOps, cloud, detection engineering, and hands-on security tooling.">
+<meta name="keywords" content="Cybersecurity, Security Engineering, DevSecOps, Cloud Security, SIEM, Threat Detection, Ethical Hacking, Linux Hardening">
+<meta name="author" content="Andrews Antwi">
+
+<!-- ========================= -->
+<!-- 🌐 OpenGraph (OG)         -->
+<!-- ========================= -->
+<meta property="og:title" content="Cybersecurity Engineering Course">
+<meta property="og:description" content="Hands-on labs and full training for foundations, security environments, web security, SIEM, cloud, and DevSecOps.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://andrewsantwi.github.io/cybersecurity-engineering-course/">
+<meta property="og:image" content="https://andrewsantwi.github.io/cybersecurity-engineering-course/assets/og-image.png">
+
+<!-- ========================= -->
+<!-- 🐦 Twitter Card           -->
+<!-- ========================= -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cybersecurity Engineering Course">
+<meta name="twitter:description" content="Hands-on security engineering training with 20+ labs and real-world exercises.">
+<meta name="twitter:image" content="https://andrewsantwi.github.io/cybersecurity-engineering-course/assets/og-image.png">
+
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+
+<!-- ====================================== -->
+<!-- 🌙 Manual Dark/Light Mode Toggle Script -->
+<!-- ====================================== -->
+<script>
+  const toggle = () => {
+    const current = document.documentElement.getAttribute("data-md-color-scheme");
+    const next = current === "slate" ? "default" : "slate";
+    document.documentElement.setAttribute("data-md-color-scheme", next);
+    localStorage.setItem("theme", next);
+  };
+
+  // Restore saved theme
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    document.documentElement.setAttribute("data-md-color-scheme", savedTheme);
+  }
+</script>
+
+{% endblock %}
