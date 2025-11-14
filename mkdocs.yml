@@ -27,8 +27,8 @@ plugins:
 nav:
   - Home: cybersecurity-engineering-course/docs/index.md
   - Foundations:
-      - Intro: /cybersecurity-engineering-course/section-01-foundations/README.md
-      - Lab 1: /cybersecurity-engineering-course/section-01-foundations/lab/lab1-basic-linux.md
+      - Intro: docs/foundations/readme.md
+      - Lab 1: docs/foundations/labs/lab1.md
   - Security Environment:
       - Lab 2: sec-env/labs/lab2.md
   - Web Security:
