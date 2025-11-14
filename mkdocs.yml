@@ -25,14 +25,14 @@ plugins:
   - search
   - awesome-pages
 nav:
-  - Home: cybersecurity-engineering-course/docs/index.md
+  - Home: README.md
   - Foundations:
       - Intro: docs/foundations/readme.md
       - Lab 1: docs/foundations/labs/lab1.md
-  - Security Environment:
+  - Build Your Home Lab:
       - Intro: docs/sec-env/readme.md
       - Lab 1: docs/sec-env/labs/lab1.md
-      - Lab 2:docs/sec-env/labs/lab2.md
+      - Lab 2: docs/sec-env/labs/lab2.md
       - Lab 3: docs/sec-env/labs/lab3.md
       - Lab 4: docs/sec-env/labs/lab4.md
   - Web Security:
@@ -48,4 +48,4 @@ nav:
   - DevSecOps:
       - Lab 7: devsecops/labs/lab7.md
   - Capstone: 
-      - capstone
+      - capstone: docs/capstone/readme.md
