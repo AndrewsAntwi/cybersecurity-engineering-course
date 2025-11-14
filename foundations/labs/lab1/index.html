@@ -1315,10 +1315,43 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#system-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#2-install-essential-tools" class="md-nav__link">
     <span class="md-ellipsis">
       
         2️⃣ Install Essential Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Networking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissions
       
     </span>
   </a>
@@ -1347,11 +1380,23 @@
 <hr />
 <h2 id="1-file-navigation-cli-commands">1️⃣ File Navigation &amp; CLI Commands</h2>
 <p>Create a workspace:</p>
-<pre><code class="language-bash">mkdir security-lab
-cd security-lab
-touch example.txt
-pwd
-ls -la
+<pre><code class="language-bash">pwd
+ls -al
+cd /path
+mkdir lab
+touch file.txt
+rm -rf directory/
+cp file1 file2
+mv old new
+
+</code></pre>
+<h2 id="system-information">System Information</h2>
+<pre><code class="language-bash">uname -a
+hostnamectl
+top
+htop
+df -h
+du -sh /var/log
 </code></pre>
 <h2 id="2-install-essential-tools">2️⃣ Install Essential Tools</h2>
 <pre><code class="language-bash">sudo apt update
@@ -1364,6 +1409,24 @@ chmod 600 example.txt
 # Verify permissions
 ls -l example.txt
 
+</code></pre>
+<h2 id="networking">Networking</h2>
+<pre><code class="language-bash">ip a
+ip r
+ss -tulpn
+ping google.com
+dig example.com
+curl -I https://site.com
+</code></pre>
+<h2 id="permissions">Permissions</h2>
+<pre><code class="language-bash">chmod 755 script.sh
+chown root:root file
+</code></pre>
+<h1 id="security-tooling">Security Tooling</h1>
+<pre><code class="language-bash">nmap -sV target.com
+tcpdump -i eth0
+grep &quot;error&quot; /var/log/syslog
+journalctl -xe
 </code></pre>
 <p>4️⃣ Check System Logs (Detective Controls)</p>
 <h1 id="monitor-failed-login-attempts">Monitor failed login attempts</h1>
