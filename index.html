@@ -6,13 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Hands-on cybersecurity engineering learning platform">
       
       
       
-        <link rel="canonical" href="https://andrewsantwi.github.io/cybersecurity-engineering-course/">
       
-      
+        <link rel="next" href="web-sec/labs/lab3/">
       
       
         
@@ -52,16 +50,6 @@
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
-
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
 
     
     
@@ -82,6 +70,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#security-engineering-course" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -203,9 +196,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="README.md" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
         
   
   
@@ -226,11 +221,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="foundations/readme/" class="md-tabs__link">
+        <a href="docs/foundations/readme.md" class="md-tabs__link">
           
   
   
-  📘 Foundations of Cybersecurity:
+  Foundations
 
         </a>
       </li>
@@ -246,7 +241,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="sec-env/readme/" class="md-tabs__link">
+        <a href="docs/sec-env/readme.md" class="md-tabs__link">
           
   
   
@@ -386,7 +381,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="capstone/readme/" class="md-tabs__link">
+        <a href="docs/capstone/readme.md" class="md-tabs__link">
           
   
   
@@ -418,9 +413,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Security Engineering" class="md-nav__button md-logo" aria-label="Security Engineering" data-md-component="logo">
       
@@ -436,10 +429,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="README.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
         
   
   
@@ -455,6 +475,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#labs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧪 Labs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capstone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏁 Capstone
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📜 License
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -491,7 +575,7 @@
   <span class="md-ellipsis">
     
   
-    📘 Foundations of Cybersecurity:
+    Foundations
   
 
     
@@ -507,7 +591,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    📘 Foundations of Cybersecurity:
+    Foundations
   
 
           </label>
@@ -520,14 +604,14 @@
   
   
     <li class="md-nav__item">
-      <a href="foundations/readme/" class="md-nav__link">
+      <a href="docs/foundations/readme.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Intro
   
 
     
@@ -548,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="foundations/labs/lab1/" class="md-nav__link">
+      <a href="docs/foundations/labs/lab1.md" class="md-nav__link">
         
   
   
@@ -637,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sec-env/readme/" class="md-nav__link">
+      <a href="docs/sec-env/readme.md" class="md-nav__link">
         
   
   
@@ -665,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sec-env/labs/lab1/" class="md-nav__link">
+      <a href="docs/sec-env/labs/lab1.md" class="md-nav__link">
         
   
   
@@ -693,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sec-env/labs/lab2/" class="md-nav__link">
+      <a href="docs/sec-env/labs/lab2.md" class="md-nav__link">
         
   
   
@@ -721,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sec-env/labs/lab3/" class="md-nav__link">
+      <a href="docs/sec-env/labs/lab3.md" class="md-nav__link">
         
   
   
@@ -749,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sec-env/labs/lab4/" class="md-nav__link">
+      <a href="docs/sec-env/labs/lab4.md" class="md-nav__link">
         
   
   
@@ -1372,7 +1456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="capstone/readme/" class="md-nav__link">
+      <a href="docs/capstone/readme.md" class="md-nav__link">
         
   
   
@@ -1407,15 +1491,79 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#labs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧪 Labs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capstone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏁 Capstone
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📜 License
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
-              
-                
-
-
-
-
               
               <article class="md-content__inner md-typeset">
                 
@@ -1423,7 +1571,50 @@
 
 
 
-  <h1>Home</h1>
+<h1 id="security-engineering-course">🛡️ Security Engineering Course</h1>
+<p><img alt="Trivy Scan" src="https://github.com/AndrewsAntwi/cybersecurity-engineering-course/actions/workflows/trivy-scan.yml/badge.svg" />
+<img alt="Markdown Lint" src="https://github.com/AndrewsAntwi/cybersecurity-engineering-course/actions/workflows/markdown-lint.yml/badge.svg" />
+<img alt="Link Checker" src="https://github.com/AndrewsAntwi/cybersecurity-engineering-course/actions/workflows/links.yml/badge.svg" /></p>
+<p>Welcome to the <strong>From Zero to Security Engineer</strong>
+A complete 10-module cybersecurity engineering curriculum with hands-on labs, projects, and a final capstone.</p>
+<p>This GitHub repository contains:</p>
+<ul>
+<li>All labs</li>
+<li>All assignments</li>
+<li>All code samples</li>
+<li>Docker setups</li>
+<li>SIEM rules</li>
+<li>DevSecOps pipelines</li>
+<li>Capstone templates</li>
+</ul>
+<h2 id="structure">🧩 Structure</h2>
+<ul>
+<li><code>section-01-foundations/</code>  </li>
+<li><code>section-02-security-labs/</code>  </li>
+<li><code>section-03-web-attacks/</code>  </li>
+<li><code>section-04-secure-coding/</code>  </li>
+<li><code>section-05-linux-hardening/</code>  </li>
+<li><code>section-06-cloud-security/</code>  </li>
+<li><code>section-07-siem/</code>  </li>
+<li><code>section-08-detection-engineering/</code>  </li>
+<li><code>section-09-devsecops/</code>  </li>
+<li><code>section-10-capstone/</code></li>
+</ul>
+<h2 id="labs">🧪 Labs</h2>
+<p>You will find all lab instructions in each section's <code>/lab</code> folder.</p>
+<h2 id="capstone">🏁 Capstone</h2>
+<p>Your final project ties together:</p>
+<ul>
+<li>Cloud security</li>
+<li>Linux hardening</li>
+<li>SIEM monitoring</li>
+<li>Web exploitation</li>
+<li>Secure coding</li>
+<li>Detection engineering</li>
+<li>DevSecOps scanning</li>
+</ul>
+<h2 id="license">📜 License</h2>
+<p>Free to use for training and skill development.</p>
 
 
 
@@ -1432,10 +1623,6 @@
 
 
 
-
-
-
-  
 
 
 
@@ -1479,7 +1666,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.expand", "navigation.sections", "navigation.tabs", "navigation.instant", "navigation.path", "content.code.copy", "content.action.edit", "content.tabs.link", "search.highlight", "search.suggest", "toc.integrate"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.expand", "navigation.sections", "navigation.tabs", "content.code.copy", "content.tabs.link", "search.highlight", "search.suggest"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>

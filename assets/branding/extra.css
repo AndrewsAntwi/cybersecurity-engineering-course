@@ -1,113 +1,24 @@
-/* Global Branding */
-:root {
-  --brand-primary: #4a56e2;
-  --brand-accent: #9c27b0;
-  --font-main: "Inter", "Segoe UI", sans-serif;
+/* Custom Material Theme Overrides */
+
+/* Header background color */
+.md-header {
+    background-color: #1E3A8A !important; /* Indigo 800 */
 }
 
-body {
-  font-family: var(--font-main);
+/* Primary links color */
+.md-nav__link--active {
+    color: #8B5CF6 !important; /* Deep Purple accent */
 }
 
-/* Header */
-.custom-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 18px;
+/* Code block styling */
+.md-typeset pre {
+    background-color: #F3F4F6 !important; /* Gray-100 */
+    border-radius: 0.5rem !important;
+    padding: 1rem !important;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-}
-
-.brand-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 10px;
-  color: var(--brand-primary);
-}
-
-.toggle-btn {
-  cursor: pointer;
-  border: none;
-  background: none;
-  font-size: 1.4rem;
-  margin-right: 12px;
-}
-
-.social-icon {
-  color: var(--brand-primary);
-  font-weight: bold;
-}
-
-/* Footer */
-.footer-grid {
-  padding: 30px;
-  text-align: center;
-  color: #999;
-  font-size: 0.9rem;
-}
-
-/* Hero */
-.lms-hero {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:2rem;
-  padding:3rem 2rem;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  color: #fff;
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-}
-.lms-hero .hero-left { max-width: 65%; }
-.lms-hero h1 { font-size: 2.2rem; margin:0 0 .4rem 0; }
-.lms-hero p.lead { font-size:1.05rem; opacity:.9 }
-
-/* Animated call-to-action */
-.cta-btn {
-  display:inline-block;
-  padding: .7rem 1.1rem;
-  border-radius:10px;
-  background: linear-gradient(90deg,#6366f1,#a78bfa);
-  color:white; font-weight:600;
-  box-shadow: 0 8px 18px rgba(99,102,241,.12);
-  transition: transform .12s ease, box-shadow .12s;
-}
-.cta-btn:hover { transform: translateY(-3px); box-shadow: 0 14px 28px rgba(99,102,241,.18); }
-
-/* Progress header */
-.lms-progress {
-  display:flex;
-  align-items:center;
-  gap:1rem;
-  padding: 8px 12px;
-}
-.lms-progress .progress-bar {
-  background:#e6e9ef; border-radius:999px; height:12px; width:220px; overflow:hidden;
-}
-.lms-progress .progress-fill { height:100%; width:0%; background:linear-gradient(90deg,#10b981,#06b6d4); transition: width .4s; border-radius:999px; }
-
-/* Module badges */
-.badge {
-  display:inline-block;
-  padding:.25rem .5rem;
-  background: rgba(99,102,241,.12);
-  color:#4f46e5;
-  border-radius:6px;
-  font-weight:600;
-  font-size:.85rem;
-  margin-left:.4rem;
-}
-
-/* Small card animation */
-.lab-card { background:#fff; border-radius:10px; padding:1rem; box-shadow: 0 6px 16px rgba(2,6,23,.06); transition: transform .12s; }
-.lab-card:hover { transform: translateY(-6px); }
-
-/* Certificate button */
-.cert-btn {
-  border-radius:8px; padding:.6rem .9rem;
-  background:#06b6d4; color:#fff; font-weight:700;
+/* Footer styling */
+.md-footer {
+    background-color: #1E3A8A !important;
+    color: white !important;
 }
