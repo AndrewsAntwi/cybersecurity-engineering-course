@@ -30,7 +30,11 @@ nav:
       - Intro: docs/foundations/readme.md
       - Lab 1: docs/foundations/labs/lab1.md
   - Security Environment:
-      - Lab 2: sec-env/labs/lab2.md
+      - Intro: docs/sec-env/readme.md
+      - Lab 1: docs/sec-env/labs/lab1.md
+      - Lab 2:docs/sec-env/labs/lab2.md
+      - Lab 3: docs/sec-env/labs/lab3.md
+      - Lab 4: docs/sec-env/labs/lab4.md
   - Web Security:
       - Lab 3: web-sec/labs/lab3.md
   - Linux Hardening:
