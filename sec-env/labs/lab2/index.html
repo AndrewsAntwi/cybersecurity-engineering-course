@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../../../cloud/labs/lab5/">
       
-      
-        <link rel="next" href="../../../detection/rules/">
+        <link rel="next" href="../../../web-sec/labs/lab3/">
       
       
         
@@ -23,7 +21,7 @@
     
     
       
-        <title>Lab 6 - Security Engineering</title>
+        <title>Lab 2 - Security Engineering</title>
       
     
     
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lab-6-siem-setup" class="md-skip">
+        <a href="#lab-2-deploy-dvwa-damn-vulnerable-web-app" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab 6
+              Lab 2
             
           </span>
         </div>
@@ -237,11 +235,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../sec-env/labs/lab2/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -317,13 +317,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../siem/labs/lab6/" class="md-tabs__link">
           
   
   
@@ -575,28 +573,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -614,7 +615,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -629,10 +630,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../sec-env/labs/lab2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -648,6 +676,103 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#section-a-pull-dvwa-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SECTION A — Pull DVWA Image
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-b-run-dvwa-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SECTION B — Run DVWA Container
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-c-verify-dvwa-is-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SECTION C — Verify DVWA is running
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expected-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected output:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dvwa-vulnerablesweb-dvwa-up-30-seconds-00008080-80tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dvwa vulnerables/web-dvwa Up 30 seconds 0.0.0.0:8080-&gt;80/tcp
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-d-access-dvwa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SECTION D — Access DVWA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-e-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SECTION E — Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -931,31 +1056,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -973,7 +1095,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -988,19 +1110,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../siem/labs/lab6/" class="md-nav__link">
         
   
   
@@ -1016,7 +1129,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1316,6 +1428,91 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#section-a-pull-dvwa-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SECTION A — Pull DVWA Image
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-b-run-dvwa-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SECTION B — Run DVWA Container
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-c-verify-dvwa-is-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SECTION C — Verify DVWA is running
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expected-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected output:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dvwa-vulnerablesweb-dvwa-up-30-seconds-00008080-80tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        dvwa vulnerables/web-dvwa Up 30 seconds 0.0.0.0:8080-&gt;80/tcp
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-d-access-dvwa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SECTION D — Access DVWA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-e-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SECTION E — Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1331,7 +1528,49 @@
 
 
 
-<h1 id="lab-6-siem-setup">Lab 6 – SIEM Setup</h1>
+<h1 id="lab-2-deploy-dvwa-damn-vulnerable-web-app">🟩 LAB 2 — Deploy DVWA (Damn Vulnerable Web App)</h1>
+<p>🎯 Learning Goal</p>
+<p>Run a vulnerable web app in Docker.</p>
+<p>📌 Prerequisites</p>
+<p>Docker installed.</p>
+<h2 id="section-a-pull-dvwa-image">SECTION A — Pull DVWA Image</h2>
+<pre><code class="language-bash">docker pull vulnerables/web-dvwa
+</code></pre>
+<h2 id="section-b-run-dvwa-container">SECTION B — Run DVWA Container</h2>
+<pre><code class="language-bash">docker run -d -p 8080:80 --name dvwa vulnerables/web-dvwa
+</code></pre>
+<p>Explanation:</p>
+<pre><code>-d → run in background
+
+-p 8080:80 → expose port
+
+--name dvwa → easier reference
+</code></pre>
+<h2 id="section-c-verify-dvwa-is-running">SECTION C — Verify DVWA is running</h2>
+<pre><code class="language-bash">docker ps
+</code></pre>
+<h2 id="expected-output">Expected output:</h2>
+<h2 id="dvwa-vulnerablesweb-dvwa-up-30-seconds-00008080-80tcp">dvwa     vulnerables/web-dvwa    Up 30 seconds    0.0.0.0:8080-&gt;80/tcp</h2>
+<h2 id="section-d-access-dvwa">SECTION D — Access DVWA</h2>
+<p>Open browser:</p>
+<pre><code>http://127.0.0.1:8080
+</code></pre>
+<p>If asked to reset DB:</p>
+<pre><code>Username: admin
+
+Password: password
+</code></pre>
+<p>Click Create / Reset Database</p>
+<h2 id="section-e-troubleshooting">SECTION E — Troubleshooting</h2>
+<p>❌ Browser shows 404</p>
+<p>→ Make sure container is running:</p>
+<pre><code class="language-bash">docker start dvwa
+</code></pre>
+<p>❌ Port already in use</p>
+<p>Find processes:</p>
+<pre><code class="language-bash">sudo lsof -i :8080
+</code></pre>
+<p>Kill conflicting process if needed.</p>
 
 
 
