@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://andrewsantwi.github.io/cybersecurity-engineering-course/sitemap.xml

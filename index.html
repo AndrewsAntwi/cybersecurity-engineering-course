@@ -14,8 +14,6 @@
       
       
       
-        <link rel="next" href="foundations/readme/">
-      
       
         
       
@@ -54,6 +52,16 @@
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -74,11 +82,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#security-engineering-course" class="md-skip">
-          Skip to content
-        </a>
       
     </div>
     <div data-md-component="announce">
@@ -200,11 +203,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="README.md" class="md-tabs__link">
         
   
   
@@ -435,37 +436,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="README.md" class="md-nav__link">
         
   
   
@@ -481,70 +455,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🧩 Structure
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#labs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🧪 Labs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#capstone" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏁 Capstone
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📜 License
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1505,8 +1415,6 @@
 
 
 
-  
-
 
               
               <article class="md-content__inner md-typeset">
@@ -1515,50 +1423,7 @@
 
 
 
-<h1 id="security-engineering-course">🛡️ Security Engineering Course<a class="headerlink" href="#security-engineering-course" title="Permanent link">&para;</a></h1>
-<p><img alt="Trivy Scan" src="https://github.com/AndrewsAntwi/cybersecurity-engineering-course/actions/workflows/trivy-scan.yml/badge.svg" />
-<img alt="Markdown Lint" src="https://github.com/AndrewsAntwi/cybersecurity-engineering-course/actions/workflows/markdown-lint.yml/badge.svg" />
-<img alt="Link Checker" src="https://github.com/AndrewsAntwi/cybersecurity-engineering-course/actions/workflows/links.yml/badge.svg" /></p>
-<p>Welcome to the <strong>From Zero to Security Engineer</strong>
-A complete 10-module cybersecurity engineering curriculum with hands-on labs, projects, and a final capstone.</p>
-<p>This GitHub repository contains:</p>
-<ul>
-<li>All labs</li>
-<li>All assignments</li>
-<li>All code samples</li>
-<li>Docker setups</li>
-<li>SIEM rules</li>
-<li>DevSecOps pipelines</li>
-<li>Capstone templates</li>
-</ul>
-<h2 id="structure">🧩 Structure<a class="headerlink" href="#structure" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>section-01-foundations/</code>  </li>
-<li><code>section-02-security-labs/</code>  </li>
-<li><code>section-03-web-attacks/</code>  </li>
-<li><code>section-04-secure-coding/</code>  </li>
-<li><code>section-05-linux-hardening/</code>  </li>
-<li><code>section-06-cloud-security/</code>  </li>
-<li><code>section-07-siem/</code>  </li>
-<li><code>section-08-detection-engineering/</code>  </li>
-<li><code>section-09-devsecops/</code>  </li>
-<li><code>section-10-capstone/</code></li>
-</ul>
-<h2 id="labs">🧪 Labs<a class="headerlink" href="#labs" title="Permanent link">&para;</a></h2>
-<p>You will find all lab instructions in each section's <code>/lab</code> folder.</p>
-<h2 id="capstone">🏁 Capstone<a class="headerlink" href="#capstone" title="Permanent link">&para;</a></h2>
-<p>Your final project ties together:</p>
-<ul>
-<li>Cloud security</li>
-<li>Linux hardening</li>
-<li>SIEM monitoring</li>
-<li>Web exploitation</li>
-<li>Secure coding</li>
-<li>Detection engineering</li>
-<li>DevSecOps scanning</li>
-</ul>
-<h2 id="license">📜 License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
-<p>Free to use for training and skill development.</p>
+  <h1>Home</h1>
 
 
 
@@ -1567,6 +1432,10 @@ A complete 10-module cybersecurity engineering curriculum with hands-on labs, pr
 
 
 
+
+
+
+  
 
 
 
