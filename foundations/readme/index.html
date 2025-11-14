@@ -706,6 +706,50 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#understanding-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding Logs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-log-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common log types:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-log-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples of log types:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-logs-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why logs matter:
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1805,15 +1849,42 @@
 </tbody>
 </table>
 <hr />
-<p>Understanding Logs</p>
+<h3 id="understanding-logs">Understanding Logs<a class="headerlink" href="#understanding-logs" title="Permanent link">&para;</a></h3>
 <p>Logs are records of system and network activity.</p>
-<p>Common log types:</p>
+<h3 id="common-log-types">Common log types:<a class="headerlink" href="#common-log-types" title="Permanent link">&para;</a></h3>
 <p>Auth logs → login attempts, sudo usage</p>
 <p>System logs → kernel events</p>
 <p>Web logs → HTTP requests</p>
 <p>Application logs → app-specific events</p>
-<p>Why logs matter:
-✔ Helps analysts investigate incidents
+<h3 id="examples-of-log-types">Examples of log types:<a class="headerlink" href="#examples-of-log-types" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Log Type</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>System Logs</td>
+<td><code>/var/log/syslog</code></td>
+</tr>
+<tr>
+<td>Auth Logs</td>
+<td><code>/var/log/auth.log</code></td>
+</tr>
+<tr>
+<td>Web Logs</td>
+<td><code>/var/log/nginx/access.log</code></td>
+</tr>
+<tr>
+<td>Cloud Logs</td>
+<td>CloudTrail / Log Analytics</td>
+</tr>
+</tbody>
+</table>
+<h3 id="why-logs-matter">Why logs matter:<a class="headerlink" href="#why-logs-matter" title="Permanent link">&para;</a></h3>
+<p>✔ Helps analysts investigate incidents
 ✔ Supports threat detection
 ✔ Required for compliance (PCI-DSS, HIPAA, etc.)</p>
 <hr />
