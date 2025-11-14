@@ -1,17 +1,38 @@
-name: Trivy Scanner
+name: Trivy Security Scan
 
 on:
   push:
   pull_request:
 
 jobs:
-  scan:
+  trivy-scan:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      # 1️⃣ Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v3
 
+      # 2️⃣ Install Trivy
       - name: Install Trivy
-        uses: aquasecurity/trivy-action@master
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget apt-transport-https gnupg lsb-release
+          wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+          echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/trivy.list
+          sudo apt-get update
+          sudo apt-get install -y trivy
 
-      - name: Scan file system
-        run: trivy fs .
+      # 3️⃣ Scan the repository file system
+      - name: Scan file system for vulnerabilities
+        run: trivy fs --exit-code 1 --severity HIGH,CRITICAL .
+
+      # 4️⃣ Optional: Scan a Docker image (uncomment if you have an image)
+      # - name: Build Docker image
+      #   run: docker build -t my-app:latest .
+      #
+      # - name: Scan Docker image
+      #   run: trivy image --exit-code 1 --severity HIGH,CRITICAL my-app:latest
+
+      # 5️⃣ Output summary (optional)
+      - name: Generate Trivy JSON report
+        run: trivy fs --format json -o trivy-fs-report.json .
