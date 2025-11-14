@@ -1,0 +1,2 @@
+Client -> DNS -> Server
+Client -> Server (HTTPS)

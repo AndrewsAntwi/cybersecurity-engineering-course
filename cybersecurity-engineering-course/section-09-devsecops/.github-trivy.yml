@@ -1,0 +1,10 @@
+# .github/workflows/trivy.yml
+name: Container Security Scan
+on: [push]
+jobs:
+  trivy-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Trivy
+        uses: aquasecurity/trivy-action@master

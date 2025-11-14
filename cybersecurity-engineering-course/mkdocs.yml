@@ -1,0 +1,30 @@
+site_name: Cybersecurity Engineering Course
+site_description: From Zero to Security Engineer — Hands-on curriculum and labs
+site_author: Andrews
+repo_name: https://github.com/<your-username>/cybersecurity-engineering-course
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Syllabus:
+      - Course Overview: syllabus/course-overview.md
+      - Learning Outcomes: syllabus/learning-outcomes.md
+      - Weekly Outline: syllabus/weekly-outline.md
+  - Modules:
+      - Module 1: section-01-foundations/README.md
+      - Module 2: section-02-security-labs/README.md
+      - Module 3: section-03-web-attacks/README.md
+      - Module 4: section-04-secure-coding/README.md
+      - Module 5: section-05-linux-hardening/README.md
+      - Module 6: section-06-cloud-security/README.md
+      - Module 7: section-07-siem/README.md
+      - Module 8: section-08-detection-engineering/README.md
+      - Module 9: section-09-devsecops/README.md
+      - Module 10: section-10-capstone/README.md
+  - Lab Assets: assets/diagrams/network-01.txt
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+plugins:
+  - search

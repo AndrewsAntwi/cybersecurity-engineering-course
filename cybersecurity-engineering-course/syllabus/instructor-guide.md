@@ -1,0 +1,1 @@
+Instructor notes: set up lab VMs, review submissions, run grading rubric.

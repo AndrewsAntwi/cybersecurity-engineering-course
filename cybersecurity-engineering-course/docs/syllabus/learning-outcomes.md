@@ -1,0 +1,4 @@
+- Explain servers, clients, networks, DNS, IPs, HTTP/HTTPS
+- Demonstrate Linux fundamentals
+- Build and secure cloud resources
+- Create SIEM rules and detection logic
