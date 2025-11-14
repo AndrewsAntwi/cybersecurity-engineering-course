@@ -19,7 +19,7 @@
     
     
       
-        <title>Lab 1 – Basic Linux Skills - Security Engineering</title>
+        <title>Lab 1 – Basic Linux & Cybersecurity Fundamentals - Security Engineering</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lab-1-basic-linux-skills" class="md-skip">
+        <a href="#lab-1-basic-linux-cybersecurity-fundamentals" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab 1 – Basic Linux Skills
+              Lab 1 – Basic Linux &amp; Cybersecurity Fundamentals
             
           </span>
         </div>
@@ -1297,6 +1297,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-file-navigation-cli-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1️⃣ File Navigation &amp; CLI Commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-install-essential-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2️⃣ Install Essential Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1312,10 +1342,50 @@
 
 
 
-<h1 id="lab-1-basic-linux-skills">Lab 1 – Basic Linux Skills</h1>
-<pre><code class="language-bash">pwd
+<h1 id="lab-1-basic-linux-cybersecurity-fundamentals">Lab 1 – Basic Linux &amp; Cybersecurity Fundamentals</h1>
+<p><strong>Objective:</strong> Apply foundational concepts of cybersecurity with hands-on Linux exercises.</p>
+<hr />
+<h2 id="1-file-navigation-cli-commands">1️⃣ File Navigation &amp; CLI Commands</h2>
+<p>Create a workspace:</p>
+<pre><code class="language-bash">mkdir security-lab
+cd security-lab
+touch example.txt
+pwd
 ls -la
-mkdir security-lab
+</code></pre>
+<h2 id="2-install-essential-tools">2️⃣ Install Essential Tools</h2>
+<pre><code class="language-bash">sudo apt update
+sudo apt install curl wget git -y
+</code></pre>
+<p>3️⃣ Apply File Permissions (Confidentiality)</p>
+<pre><code class="language-bash"># Make file readable/writeable only by owner
+chmod 600 example.txt
+
+# Verify permissions
+ls -l example.txt
+
+</code></pre>
+<p>4️⃣ Check System Logs (Detective Controls)</p>
+<h1 id="monitor-failed-login-attempts">Monitor failed login attempts</h1>
+<pre><code class="language-bash">grep &quot;Failed password&quot; /var/log/auth.log
+
+5️⃣ Basic User Management (Responding to Incidents)
+# Lock a suspicious account
+```bash
+sudo usermod -L suspicioususer
+
+# a) Identify and Protect
+# Create a list of critical files on your system.
+# Apply basic file permissions (e.g., chmod 600 secret.txt on Linux).
+
+# b) Detect
+# Check system logs for failed login attempts:
+
+grep &quot;Failed password&quot; /var/log/auth.log
+
+# c) Respond
+# Disable a suspicious user account:
+sudo usermod -L baduser
 </code></pre>
 
 
