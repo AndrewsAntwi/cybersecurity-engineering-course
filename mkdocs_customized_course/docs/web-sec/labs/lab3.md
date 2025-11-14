@@ -1,1 +1,0 @@
-# Lab 3 – Web Vulnerabilities
