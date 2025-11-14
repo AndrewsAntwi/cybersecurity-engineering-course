@@ -9,11 +9,24 @@
 Create a workspace:
 
 ```bash
-mkdir security-lab
-cd security-lab
-touch example.txt
 pwd
-ls -la
+ls -al
+cd /path
+mkdir lab
+touch file.txt
+rm -rf directory/
+cp file1 file2
+mv old new
+
+```
+## System Information
+```bash
+uname -a
+hostnamectl
+top
+htop
+df -h
+du -sh /var/log
 ```
 
 ## 2️⃣ Install Essential Tools
@@ -30,6 +43,29 @@ chmod 600 example.txt
 # Verify permissions
 ls -l example.txt
 
+```
+## Networking 
+```bash
+ip a
+ip r
+ss -tulpn
+ping google.com
+dig example.com
+curl -I https://site.com
+```
+
+## Permissions 
+```bash
+chmod 755 script.sh
+chown root:root file
+```
+
+# Security Tooling 
+```bash
+nmap -sV target.com
+tcpdump -i eth0
+grep "error" /var/log/syslog
+journalctl -xe
 ```
 
 4️⃣ Check System Logs (Detective Controls)
